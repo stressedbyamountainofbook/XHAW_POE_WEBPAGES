@@ -1,0 +1,649 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+/*............................................Home Page...................*/
+
+.nav-bar{
+    background: linear-gradient(rgb(232, 232, 232) 0%, rgb(18, 18, 223) 35%, rgba(0,212,255,1) 100%);
+    
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .header{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ronda img{
+    width: 500px;
+    height: 300px;
+    border-radius: 13px;
+    border: 2px solid #00f2fe;
+    box-shadow: 4px 7px 0px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+
+.ronda img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+.container .header .logo{
+width: 90px;
+height: 90px;
+background: url(Images/Logo.jpg.png);
+background-size: cover;
+background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 2px solid #00f2fe;
+    box-shadow: 4px 7px 0px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 400ms;
+}
+
+.container .header .nav ul{
+    display: flex;
+    gap: 35px;
+
+}
+
+.container .header .nav ul li{
+    font-size: 15px;
+    font-weight: 500;
+    list-style: none;
+    letter-spacing: 4px;
+}
+
+.container .header .nav ul li a{
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+}
+
+.container .header .nav ul li a:hover{
+    border-bottom: 2px solid;
+    color: #4facfe;
+}
+
+.container .header .buttons button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #242b2e;
+    font-weight: 500;
+}
+
+.container .header .buttons button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+.main_content{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.main_content .main_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.main_content .main_content span{
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.main_content .main_content p{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+
+.main_content .main_content h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.cars{
+    width: 90%;
+    height: 350px;
+    background: url(Images/luxbmw.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.container .Products{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+   
+.container .Products .engins,.transsition,.porche,.wheel{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    border-radius: 5px;
+    flex-direction: row;
+    font-size: 15px;
+    display: flex;
+    font-weight: 500;
+}
+
+.container .Products .engins img,.transsition img,.porche img,.wheel img{
+    width: 100px;
+    height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.container .Products .engins:hover,.transsition:hover,.porche:hover,.wheel:hover{
+    background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+    color: #ffff;
+    font-weight: 500;
+}
+
+.main_content{
+    display: grid;
+   
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.header-right{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    transform: rotate(-45deg);
+}
+
+:root{
+    --color-color-primary: #1743e3;
+    --color-white: #eaeaea;
+    --color-color-mixed:#4facfe 20px, #00f2fe 80%;
+    --border-border-primary:var(--border-border-primary)
+
+}
+
+.sq-box{
+    height: 80%;
+    width: 80%;
+    border: 5px solid var(--color-color-primary); 
+    background: var(--color-white);
+    
+}
+
+.sq-box img{
+    position: absolute;
+    transform: rotate(45deg);
+    max-width: 3950px;
+    top: 70px;
+    padding: 20px;
+}
+
+footer {
+    background: linear-gradient(rgb(232, 232, 232) 0%, rgb(18, 18, 223) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f6f6f6;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+    transition: 0,5s;
+}
+
+.socialIcons a:hover i{
+    color: #eaeaea;
+    transition: 0,5s;
+}
+
+.footerNav {
+    margin: 30px 0px;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a {
+    color: #131212;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.4em;
+    opacity: 0.7;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+     background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+.bottom{
+    text-align: center;
+    padding: 20px;
+    background-color: #242b2e;
+}
+
+/*...............................................About Us.....................*/
+
+.About{
+    
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About .tent img{
+height: auto;
+width: 500px;
+max-width: 70%;
+
+border-radius: 13px;
+border: 2px solid #00f2fe;
+box-shadow: 4px 7px 0px;
+cursor: pointer;
+margin: 10px;
+transition: 400ms;
+}
+
+.About .tent img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+.text{
+    max-width: 100%;
+    width: 450px;
+    padding: 0 10px;
+}
+
+.tent{
+    margin: 0 auto;
+    width: 1180px;
+    max-width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tent h1{
+    font-size: 80px;
+    margin-top: 50px;
+    text-transform: capitalize;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #242b2e;
+    font-weight: 500;
+
+}
+
+.btn:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+/*...............................................Products And Services..............*/
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+}
+
+.wrapper h1{
+    font-size: 3em;
+    margin: 25px 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cards{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 1000px;
+margin-top: 30px;
+}
+
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px;
+}
+
+.card h2{
+   margin-bottom: 12px;
+   font-weight: 400;
+   text-align: center;
+}
+
+.card i{
+    margin: 20px;
+    color: #1743e3;
+}
+
+.card p{
+    color: #6c757d;
+    text-align: center
+}
+
+.card i:hover,
+.card p:hover{
+    color: #fff;
+}
+
+.card:nth-child(1):hover{
+    background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+.card:nth-child(2):hover{
+    background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+.card:nth-child(3):hover{
+    background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+.heading{
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 40px;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top img{
+    width: 400px;
+    height: 200px;
+    border-radius: 13px;
+    border: 2px solid #00f2fe;
+    box-shadow: 4px 7px 0px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+
+.top img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+/*..........................................Contact Us.............................*/
+
+.section-wrapper{
+    width: 100%;
+    padding: 10px;
+}
+
+.box-wrapper{
+    display: table;
+    position: relative;
+    width: 1100px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 30px;
+}
+
+.info-wrap{
+    height: 551px;
+     width: 35%;
+    padding: 40px;
+    float: left;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    background: linear-gradient(144deg, rgba(126,39,156,1)0%, rgba(49,39,157,1)100%);
+    color: #fff;
+}
+
+.info-title{
+    font-size: 28px;
+    text-align: left;
+    letter-spacing: 0.5px;
+
+}
+
+.info-sub-title{
+    font-size: 19px;
+    font-weight: 300;
+    margin: 17px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+}
+
+.info-details{
+    list-style: none;
+    margin: 60px 0px;
+}
+
+.info-details li{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.info-wrap li i{
+    background: black;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.info-wrap li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.info-wrap li a:hover{
+    color: #32a1eb;
+}
+
+.social-icons{
+    list-style: none;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.social-icons li{
+    display: inline-block;
+}
+
+.social-icons li i{
+    background: #fff;
+    color: black;
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 22%;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.social-icons li i:hover{
+    background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+.form-wrap{
+    width: 65%;
+    float: right;
+    padding: 40px 25px 35px 25px;
+    border-radius: 0px 30px 30px 0px;
+    background: #00f2fe;
+}
+
+.form-title{
+    text-align: left;
+    margin-left: 23px;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+.form-field{
+    display: table;
+    width: 100%;
+    padding: 20px 10px 20px 5px;
+}
+
+.form-field input,
+.form-field textarea{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+    width: 100%;
+}
+
+.form-field textarea{
+    height: 150px;
+    resize: none;
+}
+
+.form-group{
+    width: 46%;
+    float: left;
+    padding: 0px 30px;
+    margin: 14px 12px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #ecf0f3, inset -8px -8px 8px #ffff;
+}
+
+.submit-button{
+    width: 95%;
+    height: 60px;
+    margin: 0px 12px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(144deg, rgba(126,39,156,1)0%, rgba(49,39,157,1)100%);
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffff;
+    transition: .5s;
+}
+
+.submit-button:hover{
+    background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+/*.......................................Promotions Page...........................*/
+
+.heading{
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 45px;
+}
+
+
+@media (max-width:1281px) {
+  body { font-size: 1.5rem;
+        
+    }
+
+    .container .header .buttons button {
+        font-size: 0.8rem ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

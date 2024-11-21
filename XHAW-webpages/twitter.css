@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6ecf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Twitter Container */
+  .twitter-container {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #1da1f2;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Feed */
+  .feed {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .tweet {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .tweet-content {
+    flex: 1;
+    background-color: #f5f8fa;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tweet-content p {
+    margin: 5px 0;
+  }
+  
+  .tweet-content span {
+    color: #657786;
+    font-size: 12px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    background-color: #f5f8fa;
+  }
+  
+  .tweet-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #e1e8ed;
+  }
+  
+  .tweet-btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }

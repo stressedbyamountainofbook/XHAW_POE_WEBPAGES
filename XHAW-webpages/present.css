@@ -1,0 +1,612 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+/*............................................Social I  cons...................*/
+.socialIcons{
+  display: flex;
+  justify-content: right;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: black;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 1.5em;
+  color: white;
+  opacity: 0.9;
+  
+}
+
+.socialIcons a:hover{
+  background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+  transition: 0,5s;
+}
+
+.socialIcons a:hover i{
+  color: #eaeaea;
+  transition: 0,5s;
+}
+
+.iconNav{
+  width: 1530px;
+  height: 60px;
+  background: linear-gradient(to right, #4facfe 20px, #000000 80%);
+}
+
+/*............................................Navigation Bar...................*/
+
+.container .header .nav ul{
+  display: flex;
+  gap: 35px;
+  justify-content: right;
+  background: gray ;
+  height: 150px;
+}
+
+.nav img{
+width: 250px;
+height: 150px;
+margin-right: 15px;
+}
+.container .header .nav ul li{
+  font-size: 15px;
+  font-weight: 500;
+  list-style: none;
+  letter-spacing: 4px;
+  margin-top: 50px;
+}
+
+.container .header .nav ul li a{
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: black;
+}
+
+.container .header .nav ul li a:hover{
+  border-bottom: 2px solid;
+  background: whitesmoke;
+}
+
+
+
+  
+
+/*............................................Image Container...................*/
+.image-container{
+  position: relative;
+  display: inline-block;
+  max-width: 800px;
+  width: 100%;
+}
+
+.image-container img {
+  width: 1540px;
+  height: 350px;
+  display: block;
+}
+
+.aligned-image {
+  width: 30%;
+  height: 350px;
+  border-radius: 10px;
+  float: right;
+  margin-top: 30px;
+}
+
+/*............................................Text Overlay...................*/
+
+.overlay-text {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: black;
+  
+}
+
+.overlay-text h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*............................................Buttons...................*/
+
+.button-group {
+  bottom: 10%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  padding-left: 60%;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  
+}
+
+.btn:hover{
+  color: #ffff;
+  background-image: linear-gradient(to right, #e9eaf2 20px, #ffffff 80%);
+}
+
+/*............................................second Navigation...................*/
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  float: left;
+  position: relative;
+}
+/*............................................drop down button....................*/
+
+.dropbtn {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.dropbtn :hover {
+  background-color: #cc00ff;
+}
+
+/*............................................drop content....................*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background-color: #cc00ff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*............................................text section....................*/
+
+
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  align-items: center;
+ 
+}
+
+.text-container h2 {
+  margin-top: 30px;
+  padding-left: 150px;
+}
+
+.text-container p {
+  max-width: 60%;
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 150px;
+}
+
+
+
+
+/*............................................course list....................*/
+
+.list {
+  margin-bottom: 10px;
+  align-items: center;
+  padding-left: 560px;
+  font-weight: bold;
+  list-style: none;
+}
+
+
+
+
+footer {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(to right, #4facfe 20px, #000000 80%);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.footer-info,
+.footer-links,
+.footer-posts {
+    width: 30%;
+    padding-right: 30px;
+}
+
+.footer-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-posts h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding-left: 100px;
+}
+
+.footer-info p,
+.footer-links ul,
+.footer-posts ul {
+    margin: 5px 0;
+}
+
+.footer-links ul,
+.footer-posts ul {
+    list-style-type: none;
+    padding-left: 100px;
+}
+
+.footer-links a,
+.footer-posts a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.footer-links a:hover,
+.footer-posts a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-info,
+    .footer-links,
+    .footer-posts {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/*............................................Six Weeks Courses....................*/
+
+.back {
+  font-size: 1.5em;
+  margin: 25px 0;
+  font-weight: 500;
+  text-align: center;
+  list-style: none;
+
+}
+
+.back a {
+  color: #333;
+}
+
+/*.................................Modules Page..........................*/
+
+.button-container {
+  list-style-type: none;
+  padding-left: 500px;
+  margin: 50px;
+  width: 10px;
+}
+
+.button-container li {
+  margin-bottom: 10px;
+}
+
+.buton {
+  width: 500px;
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.wrapper h2 {
+  padding-left: 550px;
+  margin-top: 20px;
+}
+
+
+button:hover {
+  background: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+/*.................................Color for each button..........................*/
+
+.button4 {
+  background-color: #4CAF50;
+}
+.button5 {
+  background-color: #6600cc;
+}
+.button6 {
+  background-color: #FF00CC;
+}
+.button7 {
+  background-color: #6633FF;
+}
+.button8 {
+  background-color: #66FFFF;
+}
+.button9 {
+  background-color: #33FFFF;
+}
+.button10 {
+  background-color: #33FF66;
+}
+.button11 {
+  background-color: #FF0000;
+}
+.button12 {
+  background-color: #FFFF00;
+}
+.button13 {
+  background-color: #FF6600;
+}
+.button15 {
+  background-color: #0000FF;
+}
+
+/*.................................contact Us..........................*/
+
+.section-wrapper{
+  width: 100%;
+  padding: 10px;
+}
+
+.box-wrapper{
+  display: table;
+  position: relative;
+  width: 1100px;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 30px;
+}
+
+.info-wrap{
+  height: 551px;
+   width: 35%;
+  padding: 25px;
+  float: left;
+  display: block;
+  border-radius: 30px 0px 0px 30px;
+  background: linear-gradient(144deg, rgba(126,39,156,1)0%, rgba(49,39,157,1)100%);
+  color: #fff;
+ 
+}
+
+.info-title{
+  font-size: 28px;
+  text-align: left;
+  letter-spacing: 0.5px;
+
+}
+
+.info-sub-title{
+  font-size: 19px;
+  font-weight: 300;
+  margin: 17px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  padding: 25px;
+}
+
+.info-details{
+  list-style: none;
+  margin: 60px 0px;
+}
+
+.info-details li{
+  margin-top: 25px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.info-wrap li i{
+  background: black;
+  padding: 12px;
+  border-radius: 50%;
+  margin: 5px;
+  
+}
+
+.info-wrap li a{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.info-wrap li a:hover{
+  color: #32a1eb;
+}
+
+.social-icons{
+  list-style: none;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.social-icons li{
+  display: inline-block;
+}
+
+.social-icons li i{
+  background: #fff;
+  color: black;
+  padding: 16px;
+  font-size: 20px;
+  border-radius: 22%;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all .5s;
+  
+}
+
+.social-icons li i:hover{
+  background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+.form-wrap{
+  width: 65%;
+  float: right;
+  padding: 40px 25px 35px 25px;
+  border-radius: 0px 30px 30px 0px;
+  background: #00f2fe;
+}
+
+.form-title{
+  text-align: left;
+  margin-left: 23px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+.form-field{
+  display: table;
+  width: 100%;
+  padding: 20px 10px 20px 5px;
+}
+
+.form-field input,
+.form-field textarea{
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 20px 10px 20px 5px;
+  width: 100%;
+}
+
+.form-field textarea{
+  height: 150px;
+  resize: none;
+}
+
+.form-group{
+  width: 46%;
+  float: left;
+  padding: 0px 30px;
+  margin: 14px 12px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #ecf0f3, inset -8px -8px 8px #ffff;
+}
+
+.submit-button{
+  width: 95%;
+  height: 60px;
+  margin: 0px 12px;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(144deg, rgba(126,39,156,1)0%, rgba(49,39,157,1)100%);
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffff;
+  transition: .5s;
+}
+
+.submit-button:hover{
+  background-image: linear-gradient(to right, #4facfe 20px, #00f2fe 80%);
+}
+
+/* Button styles */
+.download-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;  /* Creates a squircle shape */
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px; /* Adds spacing to the button */
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);  /* Slightly enlarges button when hovered */
+}
+
+.download-btn:active {
+  background-color: #004085;
+  transform: scale(0.98); /* Shrinks button on click */
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+
+
